@@ -1,5 +1,5 @@
 # Use official Node.js LTS image
-FROM node:18
+FROM node:20
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 1337
 
 # Start the server
-CMD ["node", "main.js"]
+CMD ["node", "server.js"]
